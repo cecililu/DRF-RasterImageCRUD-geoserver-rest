@@ -205,7 +205,13 @@ CSRF_TRUSTED_ORIGINS = os.environ.get(
 
 DEFAULT_AUTO_FIELD = os.environ.get("DEFAULT_AUTO_FIELD", 'django.db.models.AutoField')
 
+GEOSERVER_ADMIN_USER=os.environ.get("GEOSERVER_ADMIN_USER","admin")
+GEOSERVER_ADMIN_PASSWORD=os.environ.get("GEOSERVER_ADMIN_PASSWORD","geoserver")
+
+
 try:
     from project.local_settings import *
 except ImportError:
     pass
+
+

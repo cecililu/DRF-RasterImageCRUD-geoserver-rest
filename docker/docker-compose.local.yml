@@ -25,7 +25,6 @@ services:
     env_file:
       - .db_env
 
-${FASTAPI_COMPOSE}
 
 
   redis:

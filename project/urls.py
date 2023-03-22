@@ -19,7 +19,10 @@ urlpatterns = [
     path('', HomeView.as_view()),
     path('admin/', admin.site.urls),
     path('api/v1/user/', include('user.urls')),
+    path('api/v1/raster/', include('api.urls.urls')),
+
 ]
+
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
